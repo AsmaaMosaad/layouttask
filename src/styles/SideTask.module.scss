@@ -1,0 +1,42 @@
+// .title{
+//   background-color: rgb(103, 75, 105);
+// }
+.side{
+height: 100vh;
+width: 240px;
+background-color: rgb(103, 75, 105);
+}
+.sidelist{
+ height:100%;
+ width:100%;
+}
+.sidelist .siderow{
+  height: 60px;;
+  width:100%;
+  // border: 1px solid ;
+  list-style-type: none;
+   margin: 0;
+   display: flex;
+   flex-direction: row;
+   color: white;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   
+}
+
+.sidelist .siderow:hover{
+  cursor: pointer;
+  background-color: rgb(151, 143, 143);
+}
+.siderow .sideicon{
+  flex: 10%;
+  display: grid;
+  place-items: center;
+}
+
+.siderow .sidelable{
+  flex: 90%;
+  display: grid;
+  place-items: center;
+}

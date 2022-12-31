@@ -1,0 +1,25 @@
+
+// @mixin circle (){
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 50%;
+//     background: #ea0185 ;
+// }
+
+@mixin greencircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: green;
+}
+
+// and another mixin for the pink circle
+@mixin pinkcircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: pink;
+}
+
+
+ 
