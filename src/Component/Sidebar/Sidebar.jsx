@@ -39,7 +39,7 @@ import React ,{useState}from 'react';
 import { Link } from "react-router-dom";
 import { FaBars} from 'react-icons/fa';
 import { AiOutlineClose} from 'react-icons/ai';
-import '../../styles/Sidebar.css'
+import styles from '../../styles/Sidebar.module.scss';
 import { IconContext } from "react-icons";
 import Sideitem from '../Sideitem';
 function Sidebar() {
@@ -49,31 +49,34 @@ function Sidebar() {
   
     return (
       <>
+      
         <IconContext.Provider value={{ color: "red" }}>
-          <div className={"navbar"}>
-            <Link to="#" className={"menu-bars"}>
-              <FaBars onClick={showSidebar} />
-            </Link>
+          <div className={styles.navbar}>
+          <div className={styles.menubars}>
+            
+          <FaBars onClick={showSidebar} />   
+            asmaa
+            </div> 
           </div>
-          <nav className={sidebar ? "nav-menua ctive" :"nav-menu"}>
-            <ul className={"nav-menu-items"} onClick={showSidebar}>
-              <li className={"navbar-toggle"}>
-                <Link to="#" className={"menu-bars"}>
+           <nav className={`${styles.navmenu} ${sidebar? styles.active : ''}`}>
+          <ul className={styles.navmenuitems} onClick={showSidebar}>
+              <li className={styles.navbartoggle}>
+                <div className={styles.menubars}>
                   <AiOutlineClose />
-                </Link>
-              </li>
+                </div>
+              </li> 
               {Sideitem.map((item, index) => {
                 return (
-                  <li key={index} className={"nav-text"}>
-                    <Link to={item.path}>
+                  <li key={index} className={styles.navtext}> 
+                     <Link to={item.path}>
                       {item.icon}
                       <span>{item.label}</span>
-                    </Link>
+                    </Link> 
                   </li>
                 );
               })}
             </ul>
-          </nav>
+           </nav> 
         </IconContext.Provider>
       </>
     );
