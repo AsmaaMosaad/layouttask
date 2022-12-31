@@ -36,12 +36,14 @@
 //   */}
 // export default Sidebar;
 import React ,{useState}from 'react';
-import { Link } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import { FaBars} from 'react-icons/fa';
 import { AiOutlineClose} from 'react-icons/ai';
 import styles from '../../styles/Sidebar.module.scss';
 import { IconContext } from "react-icons";
 import Sideitem from '../Sideitem';
+import Home from './../Home/Home';
+
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);
   
@@ -49,16 +51,17 @@ function Sidebar() {
   
     return (
       <>
-      
-        <IconContext.Provider value={{ color: "red" }}>
-          <div className={styles.navbar}>
+        <BrowserRouter>
+         <IconContext.Provider value={{ color: "red" }}>
+         
+         <div className={styles.navbar}>
           <div className={styles.menubars}>
             
           <FaBars onClick={showSidebar} />   
-            asmaa
+        
             </div> 
           </div>
-           <nav className={`${styles.navmenu} ${sidebar? styles.active : ''}`}>
+            <nav className={`${styles.navmenu} ${sidebar? styles.active : ''}`}>
           <ul className={styles.navmenuitems} onClick={showSidebar}>
               <li className={styles.navbartoggle}>
                 <div className={styles.menubars}>
@@ -68,16 +71,17 @@ function Sidebar() {
               {Sideitem.map((item, index) => {
                 return (
                   <li key={index} className={styles.navtext}> 
-                     <Link to={item.path}>
+                     <NavLink to={item.path}>
                       {item.icon}
                       <span>{item.label}</span>
-                    </Link> 
+                    </NavLink> 
                   </li>
                 );
               })}
             </ul>
-           </nav> 
+           </nav>  
         </IconContext.Provider>
+        </BrowserRouter>
       </>
     );
   }
