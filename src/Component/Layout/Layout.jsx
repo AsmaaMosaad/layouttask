@@ -14,10 +14,10 @@ const Layout = () => {
     
   
        <div className={styles.container}>  
-         {/* <div className={styles.Sidebar}>
+         <div className={styles.Sidebar}>
        <Sidebar />
     
-        </div>  */}
+        </div> 
        <div className={styles.main}> 
        <div className={styles.navbar}>
        <Navbar /> 

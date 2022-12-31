@@ -8,8 +8,7 @@ import { BrowserRouter as Router ,Switch, Route} from 'react-router-dom';
  return(
  <>
        <Router>
-     <Home/>
-      
+     
       <Switch>
           <Route path='/home' exact component={Home} />
           <Route path='/profile' exact component={Profile} />
