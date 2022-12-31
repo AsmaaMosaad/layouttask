@@ -4,77 +4,77 @@
 // // } */
 
 
-// .navbar {
-//     background-color: yellow;
-//     height: 80px;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//   }
+.navbar {
+    background-color: rgb(151, 143, 143);
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   
-//   .menubars {
-//     margin-left: 2rem;
-//     font-size: 2rem;
-//     background: none;
-//     color: #000;
-//   }
+  .menubars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: #000;
+  }
   
-//   .navmenu {
-//     background-color:yellow;
-//     width: 250px;
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     position: fixed;
-//     top: 0;
-//     left: -100%;
-//     transition: 850ms;
-//   }
+  .navmenu {
+    background-color:rgb(151, 143, 143);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+  }
   
-//   .navmenu.active {
-//     left: 0;
-//     transition: 450ms;
-//   }
+  .navmenu.active {
+    left: 0;
+    transition: 450ms;
+  }
   
-//   .navtext {
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     padding: 8px 0px 8px 16px;
-//     list-style: none;
-//     height: 60px;
-//   }
+  .navtext {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
   
-//   .navtext a {
-//     text-decoration: none;
-//     color: #151414;
-//     font-size: 18px;
-//     width: 95%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     padding: 0 16px;
-//     border-radius: 4px;
-//   }
+  .navtext a {
+    text-decoration: none;
+    color: #151414;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
   
-//   .navtext a:hover {
-//     background-color: #000000;
-//     color: #fff;
-//   }
+  .navtext a:hover {
+    background-color: #000000;
+    color: #fff;
+  }
   
-//   .navmenuitems {
-//     width: 100%;
-//   }
+  .navmenuitems {
+    width: 100%;
+  }
   
-//   .navbartoggle {
-//     background-color: #ffffff;
-//     width: 100%;
-//     height: 80px;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//   }
+  .navbartoggle {
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   
-//   span {
-//     margin-left: 16px;
-//   }
+  span {
+    margin-left: 16px;
+  }

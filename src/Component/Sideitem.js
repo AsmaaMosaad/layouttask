@@ -5,7 +5,7 @@ import { RiContactsLine } from 'react-icons/ri';
  const Sideitem = [
   {
    label: 'Home',
-    path: '/',
+    path: '/home',
     icon: <AiFillHome/>,
   },
   {

@@ -43,6 +43,7 @@ import styles from '../../styles/Sidebar.module.scss';
 import { IconContext } from "react-icons";
 import Sideitem from '../Sideitem';
 import Home from './../Home/Home';
+import Layout from '../Layout/Layout';
 
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);
@@ -76,6 +77,7 @@ function Sidebar() {
                       <span>{item.label}</span>
                     </NavLink> 
                   </li>
+               
                 );
               })}
             </ul>
