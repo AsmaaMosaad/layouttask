@@ -36,13 +36,14 @@
 //   */}
 // export default Sidebar;
 import React ,{useState}from 'react';
-import { Link } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import { FaBars} from 'react-icons/fa';
 import { AiOutlineClose} from 'react-icons/ai';
 import styles from '../../styles/Sidebar.module.scss';
 import { IconContext } from "react-icons";
 import Sideitem from '../Sideitem';
 import Home from './../Home/Home';
+
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);
   
@@ -50,7 +51,7 @@ function Sidebar() {
   
     return (
       <>
-      
+        <BrowserRouter>
          <IconContext.Provider value={{ color: "red" }}>
          
          <div className={styles.navbar}>
@@ -70,17 +71,17 @@ function Sidebar() {
               {Sideitem.map((item, index) => {
                 return (
                   <li key={index} className={styles.navtext}> 
-                 
-                     <div to={item.path}>
+                     <NavLink to={item.path}>
                       {item.icon}
                       <span>{item.label}</span>
-                    </div> 
+                    </NavLink> 
                   </li>
                 );
               })}
             </ul>
            </nav>  
         </IconContext.Provider>
+        </BrowserRouter>
       </>
     );
   }
