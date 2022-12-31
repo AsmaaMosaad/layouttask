@@ -5,12 +5,12 @@ import { RiContactsLine } from 'react-icons/ri';
  const Sideitem = [
   {
    label: 'Home',
-    path: '/',
+     path: '/',
     icon: <AiFillHome/>,
   },
   {
     label: 'Profile',
-     path: '/profile',
+    path: '/profile',
      icon: <CgProfile/>,
    },
    {

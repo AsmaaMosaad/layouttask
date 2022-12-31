@@ -1,9 +1,13 @@
 import React from 'react'
 import '../../App.css';
 
-function Home() {
+function Home () {
   return (
-    <div className='home'>Home</div>
+    <>
+      <h1>
+        Home
+      </h1>
+    </>
   )
 }
 
