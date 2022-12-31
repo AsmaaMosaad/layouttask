@@ -1,0 +1,15 @@
+ @import "./_mixin.scss";
+// .circle {
+//     @include circle;
+// }
+
+.greencircle {
+    @include greencircle;
+}
+
+.pinkcircle {
+    @include pinkcircle;
+}
+
+
+
